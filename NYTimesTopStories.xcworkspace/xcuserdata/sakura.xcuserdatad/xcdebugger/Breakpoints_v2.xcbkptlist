@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NYTimesTopStoriesTests/NYTimesTopStoriesTests.swift"
+            timestampString = "532403255.890118"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "spec()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NYTimesTopStoriesTests/NYTimesTopStoriesTests.swift"
+            timestampString = "532403255.890492"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "spec()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; () in closure #1 () -&gt; () in NYTimesTopStoriesTests.StorySpec.spec() -&gt; ()"
+                  moduleName = "NYTimesTopStoriesTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sakura/XcodeProjs/NYTimesTopStories/NYTimesTopStoriesTests/NYTimesTopStoriesTests.swift"
+                  timestampString = "532402523.594798"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #2 () -&gt; () in closure #1 () -&gt; () in NYTimesTopStoriesTests.StorySpec.spec() -&gt; ()"
+                  moduleName = "NYTimesTopStoriesTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sakura/XcodeProjs/NYTimesTopStories/NYTimesTopStoriesTests/NYTimesTopStoriesTests.swift"
+                  timestampString = "532402523.600382"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NYTimesTopStoriesTests/NYTimesTopStoriesTests.swift"
+            timestampString = "532403255.890773"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "spec()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in NYTimesTopStoriesTests.StorySpec.spec() -&gt; ()"
+                  moduleName = "NYTimesTopStoriesTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sakura/XcodeProjs/NYTimesTopStories/NYTimesTopStoriesTests/NYTimesTopStoriesTests.swift"
+                  timestampString = "532402637.390173"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "49">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 () -&gt; () in NYTimesTopStoriesTests.StorySpec.spec() -&gt; ()"
+                  moduleName = "NYTimesTopStoriesTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sakura/XcodeProjs/NYTimesTopStories/NYTimesTopStoriesTests/NYTimesTopStoriesTests.swift"
+                  timestampString = "532402637.392192"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "270">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
