@@ -9,25 +9,49 @@
 import Quick
 import Nimble
 import XCTest
+import SwiftyJSON
 @testable import NYTimesTopStories
 
-class StorySpec: QuickSpec {
+class TopStoriesDataSourceSpec: QuickSpec {
   override func spec() {
-    describe("A NYC Story") {
-      var myStory:Story!
-      beforeEach {
-        myStory = Story()
-        print(myStory.cat)
-      }
-      context("if a story exists it is testable") {
-        it("has testMe as green") {
-          let testableValue = myStory.testMe()
-          print("Heeeeeellllllo")
-          print("🐙🐙🐙🐙🐙🐙🐙")
-          print(myStory)
-          expect(testableValue).to(equal("red"))
+    describe("Top Stories Data Source") {
+      context("when loading json") {
+        var tSds:TopStoriesDataSource!
+        var topJSON:JSON!
+        beforeEach {
+          tSds = TopStoriesDataSource.sharedInstance
+          let path = Bundle.main.path(forResource: "NYT", ofType: "json")
+          let jsonData = NSData(contentsOfMappedFile: path!)
+          topJSON = JSON(jsonData)
+        }
+        it("it creates an array of stories") {
+          expect(tSds.stories).to(beEmpty())
+          tSds.processData(topJSON)
+          expect(tSds.stories).toEventually(beAnInstanceOf([Story].self))
+          expect(tSds.stories.count).toEventually(beGreaterThan(0))
         }
       }
     }
   }
 }
+
+class TopStoriesAPI: QuickSpec {
+  override func spec() {
+    describe("NYT Times API") {
+      context("when being called remotely on a concurrent operation queue") {
+        var tSds:TopStoriesDataSource!
+        beforeEach {
+          tSds = TopStoriesDataSource.sharedInstance
+        }
+        // NOTE: This will fail if it can't reach the API
+        it("Returns a valid json object") {
+          expect(tSds.rawJSON).to(beEmpty())
+          tSds.loadTopStories()
+          expect(tSds.rawJSON).toEventually(beAnInstanceOf(JSON.self))
+        }
+      }
+    }
+  }
+}
+
+

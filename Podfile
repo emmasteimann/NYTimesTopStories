@@ -6,12 +6,10 @@ target 'NYTimesTopStories' do
   use_frameworks!
 
   # Pods for NYTimesTopStories
-  pod 'Bond', '~> 6.5.0'
   pod 'Alamofire', '~> 4.5'
-  pod 'AlamofireObjectMapper', '~> 5.0'
   pod 'SnapKit', '~> 4.0.0'
   pod 'SwiftyJSON'
-  pod 'Kingfisher', '~> 4.0'
+  pod 'MarqueeLabel/Swift'
 
   target 'NYTimesTopStoriesTests' do
     inherit! :search_paths

@@ -8,9 +8,24 @@
 
 import Foundation
 
-class Story {
-  let cat = "meow"
+typealias StoryArray = [Story]
+
+struct Story {
+  let title:String?
+  let publishedDate:Date?
+  let storyMultimedia:[StoryMultimedia]
+  let url:URL?
+  
   func testMe() -> String {
     return "red"
   }
+}
+
+struct StoryMultimedia {
+  let url:URL
+  let height:Int
+  let width:Int
+  let type:String
+  let subType:String
+  let format:String
 }
